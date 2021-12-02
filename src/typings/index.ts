@@ -1,3 +1,12 @@
+
+
+export interface Comment {
+    id: number
+    rating: number
+    comment: string
+    author: string
+    date: string
+}
 export interface Dish {
     id: number
     name: string
@@ -5,13 +14,6 @@ export interface Dish {
     category: string
     label: string
     price: string
-    description: string
-}
-
-export interface Comments extends Dish {
-    id: number
-    rating: number
-    comment: string
-    author: string
-    date: string
+    description: string, 
+    comments: Comment[]
 }

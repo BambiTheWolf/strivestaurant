@@ -1,7 +1,6 @@
 import dishes from '../data/menu.json'
 import { Container, Col, Row, Badge } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { Dish } from '../typings'
 
 const Menu = () => (
   <Container>
