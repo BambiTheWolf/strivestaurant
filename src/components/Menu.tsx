@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom'
 
 const Menu = () => (
   <Container>
-    {dishes.map((Dish) => (
-      <Row className='justify-content-center my-3' key={Dish.id}>
+    {dishes.map((pasta) => (
+      <Row className='justify-content-center my-3' key={pasta.id}>
         <Col xs={12} md={6} className='text-center'>
-          <Link to={'/details/' + Dish.id}>
-            <img src={Dish.image} alt='some pasta pic' />
+          <Link to={'/details/' + pasta.id}>
+            <img src={pasta.image} alt='some pasta pic' />
           </Link>
-          <h4>{Dish.name}</h4>
-          <Badge variant='warning'>{Dish.price}</Badge>
-          <Badge variant='danger'>{Dish.label}</Badge>
+          <h4>{pasta.name}</h4>
+          <Badge variant='warning'>{pasta.price}</Badge>
+          <Badge variant='danger'>{pasta.label}</Badge>
         </Col>
       </Row>
     ))}

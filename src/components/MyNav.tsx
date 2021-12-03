@@ -1,5 +1,6 @@
 import { Navbar, Nav } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import { Link, RouteComponentProps } from "react-router-dom";
+import { withRouter } from './withRouter'
 
 interface MyNavProps {
   title: string
@@ -49,4 +50,4 @@ const MyNav = (props: MixedNavProps) => (
   </Navbar>
 )
 
-export default MyNav;
+export default withRouter(MyNav);

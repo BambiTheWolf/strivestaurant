@@ -14,7 +14,7 @@ const Home = () => {
           <h1>Welcome to Strivestaurant!</h1>
           <p>We can serve only pasta</p>
           <Carousel className='mt-5'>
-            {items.map((pastaObject) => (
+            {items.map((pastaObject: Dish) => (
               <Carousel.Item key={pastaObject.id}>
                 <img
                   className='d-block w-100'
